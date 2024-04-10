@@ -1,0 +1,56 @@
+{
+  ////////////////////
+  // format settings
+  ////////////////////
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "[javascript][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml][json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "chakra",
+    "codegen",
+    "datasources",
+    "hasura",
+    "localforage",
+    "nestjs",
+    "parens",
+    "presigner",
+    "hookform",
+    "deadcode",
+  ],
+  "todo-tree.general.tags": ["FIXME", "NOTE", "TODO", "CHECK"],
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check-circle-fill",
+      "foreground": "orange",
+      "iconColour": "orange"
+    },
+    "FIXME": {
+      "icon": "flame",
+      "foreground": "yellow",
+      "iconColour": "yellow"
+    },
+    "NOTE": {
+      "icon": "paintbrush",
+      "foreground": "#00bfff",
+      "iconColour": "#00bfff"
+    },
+    "CHECK": {
+      "icon": "plus-circle",
+      "foreground": "green",
+      "iconColour": "green"
+    }
+  },
+  "typescript.referencesCodeLens.enabled": "true"
+}

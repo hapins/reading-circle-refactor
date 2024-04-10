@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "oderwat.indent-rainbow",
+    "eamodio.gitlens",
+    "mikestead.dotenv",
+    "hashicorp.terraform",
+    "prisma.prisma",
+    "redhat.vscode-yaml",
+    "github.copilot",
+    "dsznajder.es7-react-js-snippets",
+    "mariusalchimavicius.json-to-ts",
+    "usernamehw.errorlens",
+    "zixuanchen.vitest-explorer"
+  ],
+  "unwantedRecommendations": []
+}

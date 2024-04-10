@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "vitest run",
+    "lint:fix": "eslint --fix .ts,.mjs,.js",
+    "format": "prettier --cache --write \"src/**/*.mjs\" \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "prettier": "3.2.5",
+    "vitest": "^1.4.0"
+  }
+}
