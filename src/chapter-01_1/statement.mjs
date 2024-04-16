@@ -1,5 +1,5 @@
-import invoices from './data/invoices.json' assert { type: 'json' };
-import plays from './data/plays.json' assert { type: 'json' };
+import invoices from '../../data/invoices.json' assert { type: 'json' };
+import plays from '../../data/plays.json' assert { type: 'json' };
 
 export default function statement(invoice, plays) {
   let totalAmount = 0;
@@ -40,7 +40,8 @@ export default function statement(invoice, plays) {
     // ボリューム特典のポイントを加算
     volumeCredits += Math.max(perf.audience - 30, 0);
     // 喜劇のときは10 人につき、さらにポイントを加算
-    if ('comedy' === playFor(perf).type) volumeCredits += Math.floor(perf.audience / 5);
+    if ('comedy' === playFor(perf).type)
+      volumeCredits += Math.floor(perf.audience / 5);
     // 注文の内訳を出力
     result += ` ${playFor(perf).name}: ${format(thisAmount / 100)} (${perf.audience} seats)\n`;
     totalAmount += thisAmount;

@@ -26,7 +26,7 @@ test('statement function', () => {
     othello: { name: 'Othello', type: 'tragedy' },
   };
 
-  const result = statement(invoice);
+  const result = statement(invoice, plays);
   // ここでresultの値を検証します。期待する値には実際の期待する結果を入力してください。
   expect(result).toBe(`Statement for BigCo
  Hamlet: $650.00 (55 seats)
