@@ -3,9 +3,9 @@ import plays from '../../data/plays.json' assert { type: 'json' };
 
 import createStatementData from './createStatementData.mjs';
 
-export default function statement(invoice, plays) {
+export const statement = (invoice, plays) => {
   return renderPlainText(createStatementData(invoice, plays));
-}
+};
 
 function renderPlainText(data) {
   let result = `Statement for ${data.customer}\n`;
@@ -17,9 +17,9 @@ function renderPlainText(data) {
   return result;
 }
 
-function htmlStatement(invoice, plays) {
+export const htmlStatement = (invoice, plays) => {
   return renderHtml(createStatementData(invoice, plays));
-}
+};
 
 function renderHtml(data) {
   let result = `<h1>Statement for ${data.customer}</h1>\n`;
@@ -42,7 +42,3 @@ function usd(aNumber) {
     minimumFractionDigits: 2,
   }).format(aNumber / 100);
 }
-
-invoices.forEach(invoice => {
-  console.log(statement(invoice, plays));
-});
